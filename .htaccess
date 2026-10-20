@@ -1,0 +1,20 @@
+# ========================================================
+# AL MAQRA (المَقرَأ) - Apache Security & Routing Configuration
+# ========================================================
+
+# Deny direct access to .env and hidden files
+<FilesMatch "^\.env">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "\.(sqlite|log|sql)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Prevent directory browsing
+Options -Indexes
+
+# UTF-8 character encoding default
+AddDefaultCharset UTF-8

@@ -1,0 +1,20 @@
+# Environment & Private Secrets
+.env
+.env.local
+.env.*.local
+
+# SQLite Database Fallbacks & Backups
+/database/*.sqlite
+/database/*.db
+/database/backups/
+
+# Logs & Temporary Files
+*.log
+/logs/
+/tmp/
+
+# OS and Editor Artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
